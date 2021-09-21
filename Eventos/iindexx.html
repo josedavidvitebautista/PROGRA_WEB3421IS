@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tabla{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<!--<table>
+    <tr>
+        <th>Uno</th>
+        <th>Operación</th>
+        <th>N2</th>
+        <th>Total</th>
+        <th>Acción</th>
+    </tr>
+    <tr>
+        <td>
+            <input class="otro" type="text" name="n1" id="n1">
+        </td>
+        <td>
+            <label class="otro">Texto de prueba</label>
+        </td>
+        <td>
+            <input type="text" name="n1" id="n1">
+        </td>
+        <td>
+            <input perro="jaja" onclick="saludo(this)" type="text" name="n1" id="n1">
+        </td>
+        <td>
+            <button numero="1" perro="firulais" id="btn-ok" onclick="saludo(this)">ok</button>
+        </td>
+    </tr>
+</table>
+</body>
+<script>
+
+    function saludo(elemento){
+        var nombre = elemento.getAttribute('perro');
+        alert(nombre);
+    }
+
+    var elementos = document.getElementsByClassName('otro');
+    for(var i = 0; i < elementos.length; i++){
+        console.log(elementos[i]);
+    }
+</script>-->
+<!--Mi Avance-->
+<table class="tabla">
+    <tr>
+        <th>#Id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Acción</th>
+    </tr>
+    <tr>
+        <th>1</th>
+        <th>Coca-Cola</th>
+        <th>10</th>
+        <th>10</th>
+        <th><button nombre="Coca-Cola" precio="10" cantidad="10" >Agregar</button></th>
+    </tr>
+    <tr>
+        <th>2</th>
+        <th>Pepsi</th>
+        <th>5</th>
+        <th>5</th>
+        <th><button nombre="Pepsi" precio="5" cantidad="5" >Agregar</button></th>
+    </tr>
+    <tr>
+        <th>3</th>
+        <th>Otro</th>
+        <th>2</th>
+        <th>2</th>
+        <th> <button nombre="Otro" precio="2" cantidad="2" >Agregar</button></th>
+    </tr>
+</table>
+<!--El Del Profe :v-->
+<!--<table class="tabla" style="margin-top: 5%;">
+    <tr>
+        <th>#id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Acción</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Coca Cola</td>
+        <td>10</td>
+        <td>10</td>
+        <td><button producto-id="1" nombre="Coca Cola" precio="10" cantidad="10" onclick="agregarProducto(this)">Agregar</button></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Pepsi</td>
+        <td>5</td>
+        <td>5</td>
+        <td><button producto-id="2" nombre="Pepsi" precio="5" cantidad="5" onclick="agregarProducto(this)">Agregar</button></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Otro</td>
+        <td>2</td>
+        <td>2</td>
+        <td><button producto-id="3" nombre="Otro" precio="2" cantidad="2" onclick="agregarProducto(this)">Agregar</button></td>
+    </tr>
+</table>
+
+<table class="tabla" style="margin-top: 10%;">
+    <thead>
+    <tr>
+        <th>#id</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Acción</th>
+    </tr>
+    </thead>
+    <tbody id="carrito">
+
+    </tbody>
+
+</table>
+</body>
+<script>
+
+    function agregarProducto(producto){
+        var nombre = producto.getAttribute('nombre');
+        var precio = producto.getAttribute('precio');
+        var cantidad = producto.getAttribute('cantidad');
+        var id = producto.getAttribute('producto-id');
+        document.getElementById('carrito').innerHTML += '<tr><td>'+id+'</td><td>'+nombre+'</td><td>'+precio+'</td><td>1</td></tr>';
+
+    }
+</script>-->
+</body>
+</html>
