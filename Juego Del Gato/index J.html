@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego Del Gato</title>
+    <style>
+        .Estructura{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<table class="Estructura">
+    <!--Columna 1-->
+    <tr>
+        <th><input type = "text" id ="c-1"></th>
+        <th><input type = "text" id ="c-2"></th>
+        <th><input type = "text" id ="c-3"></th>
+
+    <!--Columna 2-->
+    <tr>
+        <th><input type = "text" id ="c-4"></th>
+        <th><input type = "text" id ="c-5"></th>
+        <th><input type = "text" id ="c-6"></th>
+    </tr>
+
+    <!--Columna 3-->
+    <tr>
+        <th><input type = "text" id ="c-7"></th>
+        <th><input type = "text" id ="c-8"></th>
+        <th><input type = "text" id ="c-9"></th>
+        <th><button onclick="Resultado()">Cambio</button></th>
+    </tr>
+<script>
+    function Resultado(){
+        var c1= document.getElementById('c-1').value;
+        var c2= document.getElementById('c-2').value;
+        var c3= document.getElementById('c-3').value;
+        var c4= document.getElementById('c-4').value;
+        var c5= document.getElementById('c-5').value;
+        var c6= document.getElementById('c-6').value;
+        var c7= document.getElementById('c-7').value;
+        var c8= document.getElementById('c-8').value;
+        var c9= document.getElementById('c-9').value;
+
+        //Horizontales
+        switch (c1 && c2 && c3){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        switch (c4 && c5 && c6){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        switch (c7 && c8 && c9){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        //Verticales
+        switch (c1 && c4 && c7){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        switch (c2 && c5 && c8){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        switch (c3 && c6 && c9){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        //Diagonales
+        switch (c1 && c5 && c9){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+        switch (c3 && c5 && c7){
+            case 'x':
+                alert("Gana x");
+                break;
+            case 'o':
+                alert("Gana o");
+                break;
+        }
+    }
+</script>
+</table>
+</body>
+</html>
