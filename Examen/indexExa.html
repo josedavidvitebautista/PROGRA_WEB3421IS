@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 1</title>
+</head>
+<style>
+    .trazo{
+        border: 3px solid black;
+    }
+</style>
+<body>
+
+<table class="trazo">
+    <thead>
+    <tr>
+        <th><b>Lista De Productos</b></th>
+    </tr>
+    <tr>
+        <th><b>Productos</b></th>
+        <th><b>Precio</b></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Libreta</td>
+        <td>$20</td>
+        <td><button nombre="Libreta" precio="$20" onclick="MoverP1(this)">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Teclado</td>
+        <td>$240</td>
+        <td><button nombre="Teclado" precio="$240" onclick="MoverP2(this)">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Audifonos</td>
+        <td>$50</td>
+        <td><button nombre="Audifonos" precio="$50" onclick="MoverP3(this)">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Monitor</td>
+        <td>$4000</td>
+        <td><button nombre="Monitor" precio="$4000" onclick="MoverP4(this)">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Mouse</td>
+        <td>$140</td>
+        <td><button nombre="Mouse" precio="$140" onclick="MoverP5(this)">Seleccionar</button></td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table class="trazo">
+    <thead>
+    <tr>
+        <th>Lista De Compra</th>
+    </tr>
+    </thead>
+    <tr>
+        <th>Productos</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Total</th>
+        <th><button onclick="LooL()">Calcular</button></th>
+    </tr>
+    <tbody id="Pro1.1">
+    </tbody>
+
+    <!--Elemento x Elemento-->
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th id="Total"></th>
+    </tr>
+
+    <!--Elementox1-->
+    <!--<tr>
+        <th>Libreta</th>
+        <th>$20</th>
+        <th id="1"></th>
+        <th></th>
+    </tr>
+    <tr>
+        <th>Teclado</th>
+        <th>$240</th>
+        <th id="2"></th>
+        <th ></th>
+    </tr>
+    <tr>
+        <th>Audifonos</th>
+        <th>$50</th>
+        <th id="3"></th>
+        <th ></th>
+    </tr>
+    <tr>
+        <th>Monitor</th>
+        <th>$4000</th>
+        <th id="4"></th>
+        <th ></th>
+    </tr>
+    <tr>
+        <th>Mouse</th>
+        <th>$140</th>
+        <th id="5"></th>
+        <th ></th>
+    </tr>-->
+</table>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+</head>
+<body>
+<canvas id="myChart" width="400" height="400"></canvas>
+</body>
+<script src="maiin.js"></script>
+</body>
+</html>
