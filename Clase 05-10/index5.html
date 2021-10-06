@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .Cuak{
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+<!--<table class="Cuak">
+    <thead>
+    <tr>
+        <th><b>Lista De Productos</b></th>
+    </tr>
+    <tr>
+        <th><b>Productos</b></th>
+        <th><b>Precio</b></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Libreta</td>
+        <td>$20</td>
+        <td><button nombre="Libreta" class="Mover" costo="20" value="">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Teclado</td>
+        <td>$240</td>
+        <td><button nombre="Teclado" class="Mover" costo="240" value="">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Audifonos</td>
+        <td>$50</td>
+        <td><button nombre="Audifonos" class="Mover" costo="50" value="">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Monitor</td>
+        <td>$4000</td>
+        <td><button nombre="Monitor" class="Mover" costo="4000" value="">Seleccionar</button></td>
+    </tr>
+    <tr>
+        <td>Mouse</td>
+        <td>$140</td>
+        <td><button nombre="Mouse" class="Mover" costo="140" value="">Seleccionar</button></td>
+    </tr>
+    </tbody>
+</table>-->
+<label>Libreta $20</label>
+<input type="number"  nombre="Libreta" class="Mover"  costo="20" value="">
+<br>
+<br>
+<label>Teclado $240</label>
+<input type="number"  nombre="Teclado" class="Mover" costo="40" value="">
+<br>
+<br>
+<label>Audifono $50</label>
+<input type="number"  nombre="Audifono" class="Mover" costo="50" value="">
+<br>
+<br>
+<label>Monitor $4000</label>
+<input type="number"  nombre="Monitor" class="Mover" costo="4000" value="">
+<br>
+<br>
+<label>Mouse $140</label>
+<input type="number"  nombre="Mouse" class="Mover" costo="140" value="">
+<br>
+<br>
+
+<table class="Cuak" style="margin-top: 10%;">
+    <thead>
+    <tr>
+        <th>Lista De Compra</th>
+    </tr>
+    </thead>
+    <tr>
+        <th>Productos</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Total</th>
+    </tr>
+    <tbody id="Pro1-1">
+    </tbody>
+
+</table>
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    var total = 0;
+    $(".Mover").change(function(){
+        //var productos=[];
+        var cantidad = $(this).val();
+        var nombre = ($(this).attr('nombre'));
+        var costo = parseInt($(this).attr('costo'));
+        console.log(costo);
+        total = total + (costo * cantidad);
+        //productos.push(cantidad, nombre, costo);
+        $("#Pro1-1").html("     " +nombre+ "     " +costo+ "     " +cantidad+ "     " +total);
+
+
+        //("#Pro1-1").html(productos);
+    });
+</script>
+</html>
